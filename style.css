@@ -19,7 +19,7 @@ body {
     z-index: 1;
 }
 
-a {
+.topnav a, #greeting a {
     color: black;
     text-decoration: none;
     display: inline-block;
@@ -29,7 +29,7 @@ a {
   }
   
   .topnav a:hover {
-    color: grey;
+    color: rgb(80, 80, 80);
     /* border-bottom: 2px black solid; */
   }
 
@@ -39,11 +39,31 @@ a {
       font-size: 18px;
   }
 
+  .center {
+      text-align: center;
+  }
+
+  .left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+  .wide-img {
+      margin: auto;
+      width: 90%;
+      margin: 3rem 0 0;
+      box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.4);
+  }
+
   #white-title {
       color: white;
       position: relative;
       top: 48%;
       font-size: 10vw;
+      text-shadow: 5px 5px 50px black;
     }
 
     #scroll-down-btn {
@@ -59,5 +79,15 @@ a {
   #greeting {
       height: 100vh;
       background-color: black;
+      background-image: url(assets/hull_gate.jpeg);
+      background-size: cover;
       text-align: center;
+  }
+
+  #to-top {
+      width: 3rem;
+      position: fixed;
+      right: 2rem;
+      bottom: 2rem;
+      z-index: 99;
   }
